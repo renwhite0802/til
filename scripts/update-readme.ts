@@ -66,12 +66,9 @@ for (const [category, items] of Object.entries(grouped)) {
   });
 }
 
-// 5. テンプレートと結合してREADMEを生成
-const template = fs.existsSync(TEMPLATE_PATH) 
-  ? fs.readFileSync(TEMPLATE_PATH, 'utf8') 
-  : '# My TIL\n';
-
-const finalContent = `${template}\n---\n${tilSection}\n\n> Last updated: ${new Date().toLocaleString('ja-JP')}`;
+// 5. READMEを生成（テンプレートとの結合を廃止）
+// 最新のTILリスト（tilSection）と、最終更新日時だけを書き出す
+const finalContent = `# My TIL (Today I Learned)\n\n${tilSection}\n\n---\n> Last updated: ${new Date().toLocaleString('ja-JP')}`;
 
 fs.writeFileSync(OUTPUT_PATH, finalContent);
-console.log('README.md has been successfully rebuilt!');
+console.log('README.md has been successfully rebuilt with only the TIL list!');
