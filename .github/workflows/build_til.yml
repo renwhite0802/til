@@ -3,8 +3,7 @@ name: Build README
 on:
   push:
     paths:
-      - "til/**"
-      - "templates/**"
+      - "**/*.md"
       - "scripts/**"
     branches:
       - main
