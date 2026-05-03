@@ -6,6 +6,8 @@ on:
       - "til/**"
       - "templates/**"
       - "scripts/**"
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
