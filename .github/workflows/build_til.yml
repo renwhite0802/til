@@ -27,7 +27,7 @@ jobs:
         run: npm install -g tsx
 
       - name: Build README
-        run: tsx scripts/build-readme.ts
+        run: tsx scripts/update-readme.ts
 
       - name: Commit and push
         run: |
