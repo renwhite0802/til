@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import path from 'path';
 
 // --- 設定エリア ---
-// 1. スキャンから除外するフォルダ名
+// 1. スキャンから除外するフォルダ名-
 const IGNORE_DIRS = ['.git', '.github', 'scripts', 'node_modules', 'templates'];
 // 2. テンプレートと出力先のパス（画像に合わせて修正）
 const TEMPLATE_PATH = './template.md'; 

@@ -25,4 +25,4 @@ git update-index --assume-unchanged .gitignore
 ## 教訓 (Takeaway)
 
 - gitignoreに指定するだけではだめ
-- 対象のファイルを変更検知の対象外にしたい場合は上記を実行する
+- 対象のファイルを変更検知の対象外にしたい場合は上記を実行する.
