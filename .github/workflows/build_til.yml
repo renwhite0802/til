@@ -1,0 +1,36 @@
+name: Build README
+
+on:
+  push:
+    paths:
+      - "til/**"
+      - "templates/**"
+      - "scripts/**"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # 日付を正確に取得するために全履歴を取得
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install tsx
+        run: npm install -g tsx
+
+      - name: Build README
+        run: tsx scripts/build-readme.ts
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "docs: rebuild README.md" || exit 0
+          git push
