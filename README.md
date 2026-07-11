@@ -3,15 +3,15 @@
 
 ## Latest TILs (5 posts)
 
-### AWS
-- [HowtoInvestigateNetworkErrorbyUsingVPCtrafficFlow](./AWS/HowtoInvestigateNetworkErrorbyUsingVPCtrafficFlow.md) - 2026/06/02
-- [bedrock_auditreport](./AWS/bedrock_auditreport.md) - 2026/06/02
-- [dr-architecture](./AWS/dr-architecture.md) - 2026/06/02
-
 ### Git
-- [pusherror-masterandmainbranch](./Git/pusherror-masterandmainbranch.md) - 2026/06/02
-- [scopeout-filesofgitignore](./Git/scopeout-filesofgitignore.md) - 2026/06/02
+- [scopeout-filesofgitignore](./Git/scopeout-filesofgitignore.md) - 2026/07/11
+- [pusherror-masterandmainbranch](./Git/pusherror-masterandmainbranch.md) - 2026/07/11
+
+### AWS
+- [HowtoInvestigateNetworkErrorbyUsingVPCtrafficFlow](./AWS/HowtoInvestigateNetworkErrorbyUsingVPCtrafficFlow.md) - 2026/07/11
+- [bedrock_auditreport](./AWS/bedrock_auditreport.md) - 2026/07/11
+- [dr-architecture](./AWS/dr-architecture.md) - 2026/07/11
 
 
 ---
-> Last updated: 2026/6/2 3:45:55
+> Last updated: 2026/7/11 6:22:15
